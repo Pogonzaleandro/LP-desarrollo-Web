@@ -10,7 +10,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <title>Stylish Portfolio - Start Bootstrap Template</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="logo.png" />
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -88,53 +88,87 @@
     background-color: lightblue;
     color: black;
 }
+.ropa{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.sobreNosotros{
+    height: 400px;
+    background-color: #a2d9ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+.imagen_logo{
+height: 200px;
+width: 300px;
+
+
+}
+.sobreNosotrosTexto{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.alineaciondeimagen{
+    align-self: flex-start;
+    
+}
+.foto{
+    height: 120px;
+}
+.servicios{
+    background-color: rgb(98, 182, 255);
+}
                 </style>
                 <h1 class="mb-1">Creamos tu pagina Web</h1>
                 <h3 class="mb-5"><em>Desarrollamos soluciones para tu marca o empresa</em></h3>
-                <a class="btn btn-primary btn-xl color" href="#about">Contacto</a>
             </div>
             <div>
-                <img src="buzo.svg" alt="" height="500px">
+                <img class="ropa" src="buzo.svg" alt="" height="500px">
             </div>
             
         </header>
         <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                        <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            <a href="https://unsplash.com/">Unsplash</a>
-                            !
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
-                    </div>
-                </div>
-            </div>
+        <section class="sobreNosotros">
+        <div class="alineaciondeimagen">
+            <img src="logo_transparent.png" alt="logo de Desarrollo web" class="imagen_logo">
+        </div>
+        <div class="sobreNosotrosTexto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum esse harum dolor aspernatur officiis 
+            dignissimos fugit nam velit. Reiciendis enim repellat alias incidunt unde 
+            quidem illo sequi repellendus omnis. Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Similique earum laudantium ut molestiae exercitationem nisi quos iure nam saepe expedita. 
+            Dolores eveniet distinctio vero nisi nemo tempora impedit quidem consequatur. 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Praesentium debitis laborum modi tempora velit quis alias odit nisi fuga, 
+            dicta exercitationem libero minima obcaecati, quidem dolores a molestiae eius? Illo!
+        </div>
         </section>
         <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <section class="content-section  text-white text-center servicios" id="services">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
+                    <h2 class="mb-5">Servicios</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <img src="diseño.svg" alt="" class="foto">
                         <h4><strong>Responsive</strong></h4>
                         <p class="text-faded mb-0">Looks great on any screen size!</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <img src="responsive.svg" alt="" class="foto">
                         <h4><strong>Redesigned</strong></h4>
                         <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <img src="hosting.svg" alt="" class="foto">
                         <h4><strong>Favorited</strong></h4>
                         <p class="text-faded mb-0">
                             Millions of users
@@ -143,7 +177,7 @@
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <img src="internet.svg" alt="" class="foto">
                         <h4><strong>Question</strong></h4>
                         <p class="text-faded mb-0">I mustache you a question...</p>
                     </div>
