@@ -28,7 +28,7 @@
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#inicio">inicio</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
                 <li class="sidebar-nav-item"><a href="#services">Services</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
@@ -39,7 +39,7 @@
             <h1 class="animate__animated animate__fadeInLeft logo_titulo">LP Desarrollo Web</h1>
         </div>
         <!-- Header-->
-        <header class="masthead d-flex align-items-center alinear">
+        <header id="inicio" class="masthead d-flex align-items-center alinear">
             <div class="container px-4 px-lg-5 text-center display animate__animated animate__fadeInLeft">
                 <div class="espacio">
                 
@@ -155,6 +155,13 @@ width: 300px;
 .seccion_marketing-texto_texto{
  padding: 20px;
 }
+.contacto{
+    height: 500px;
+    background-color: black;
+}
+.email{
+    width: 300px;
+}
 @media (min-width: 320px) and (max-width: 1005px){
     .alinear{
                         display: flex;
@@ -181,7 +188,7 @@ width: 300px;
                         
                     }
                     .imagenDeDiseño{
-                        width: 330px;
+                        width: 300px;
                     }
                     .imagen_market{
                         width: auto;
@@ -198,7 +205,7 @@ width: 300px;
             
         </header>
         <!-- About-->
-       <section class="sobreNosotros">
+       <section id="about" class="sobreNosotros">
         <div class="alineaciondeimagen">
             <img src="logo_transparent.png" alt="logo de Desarrollo web" class="imagen_logo">
         </div>
@@ -323,11 +330,10 @@ width: 300px;
             </div>
         </section>
         <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+        <section class="contacto" id="contact" >
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label" >Example label</label>
+                <input type="text" class="form-control  email" id="formGroupExampleInput" placeholder="Example input placeholder">
             </div>
         </section>
         <!-- Map-->
