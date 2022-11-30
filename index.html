@@ -156,11 +156,38 @@ width: 300px;
  padding: 20px;
 }
 .contacto{
-    height: 500px;
+    height: 400px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.espacio-label{
+    width: 850px;
+    min-height: 100px;
+}
+.contacto-label{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 100px;
+    
+    
+}
+.color-label{
+    color: white;
+}
+.contacto-label-2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 .email{
-    width: 300px;
+    width: 450px;
 }
 @media (min-width: 320px) and (max-width: 1005px){
     .alinear{
@@ -331,9 +358,22 @@ width: 300px;
         </section>
         <!-- Call to Action-->
         <section class="contacto" id="contact" >
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label" >Example label</label>
+            <div><h1 style="color: white;">Contactanos</h1></div>
+           <div class="contacto-label">
+            <div class="mb-3 contacto-email">
+                <label for="formGroupExampleInput" class="form-label color-label" >Example label</label>
                 <input type="text" class="form-control  email" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label color-label">Example label</label>
+                <input type="text" class="form-control email" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            </div>
+            <div class="contacto-label-2">
+                <div class="form-floating">
+                    <textarea class="form-control espacio-label" placeholder="Leave a comment here" wi id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea2" >Comments</label>
+            </div>
             </div>
         </section>
         <!-- Map-->
