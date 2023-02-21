@@ -166,38 +166,53 @@ width: 300px;
  padding: 20px;
 }
 .contacto{
-    height: 400px;
+    height: 550px;
+    width: 100%;
+    padding: 5px;
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 
 }
+.contacto-section{
+    background-color: black;
+}
 .espacio-label{
-    width: 1000px;
+    margin-top: 40px;
+    width: 25rem;
     min-height: 100px;
 }
 .contacto-label{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
     align-content: flex-end;
-    gap: 100px;
+    gap: 10px;
+    width: 45%;
+    flex-wrap: wrap;
+    
     
     
 }
 .color-label{
     color: white;
+
 }
 .contacto-label-2{
+  
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: flex-end;
+    flex-wrap: wrap;
+    width: 45%;
 }
 .email{
-    width: 450px;
+    width: 25rem;
+}
+.textoensection{
+    text-align: center;
 }
 @media (min-width: 320px) and (max-width: 1005px){
     .alinear{
@@ -230,8 +245,13 @@ width: 300px;
                     .imagen_market{
                         width: auto;
                     }
+                    .contacto{
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        width: 90%;
+                    
+                    }
                 }
-
                 </style>
                 <h1 class="mb-1">Creamos tu pagina Web</h1>
                 <h3 class="mb-5"><em>Desarrollamos soluciones para tu marca o empresa</em></h3>
@@ -367,24 +387,29 @@ width: 300px;
             </div>
         </section>
         <!-- Call to Action-->
-        <section class="contacto" id="contact" >
-            <div><h1 style="color: white;">Contactanos</h1></div>
-           <div class="contacto-label">
+        <section  class="contacto-section" id="contact" >
+            <div class="textoensection"><h1 style="color: white;">Contactanos</h1></div>
+            <article class="contacto">
+            <div class="contacto-label">
             <div class="mb-3 contacto-email">
                 <label for="formGroupExampleInput" class="form-label color-label" >Example label</label>
-                <input type="text" class="form-control  email" id="formGroupExampleInput" placeholder="Example input placeholder">
+                <input type="text" class="form-control  email " id="formGroupExampleInput" placeholder="Example input placeholder">
             </div>
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label color-label">Example label</label>
                 <input type="text" class="form-control email" id="formGroupExampleInput" placeholder="Example input placeholder">
             </div>
-            </div>
-            <div class="contacto-label-2">
-                <div class="form-floating">
+                <div>
                     <textarea class="form-control espacio-label" placeholder="Leave a comment here" wi id="floatingTextarea"></textarea>
                     <label for="floatingTextarea2" >Comments</label>
             </div>
             </div>
+            <div class="contacto-label-2">
+                <h1>hola este es mi lugar
+
+                </h1>
+            </div>
+            </article>
         </section>
         <!-- Map-->
         <!-- Footer-->
